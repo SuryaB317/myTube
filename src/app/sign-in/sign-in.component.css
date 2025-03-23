@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: burlywood;
+  font-weight: 500;
+  word-wrap: break-word;
+
+}

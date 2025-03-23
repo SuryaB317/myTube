@@ -1,0 +1,71 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.typing-container {
+  display: inline-block;
+  font-size: 48px;
+  color: #333;
+}
+
+.typing-effect {
+  display: inline-block;
+  opacity: 0;  /* Initially hide the letters */
+  animation: typing 0.2s forwards;
+  animation-timing-function: steps(1);
+  animation-iteration-count: 1;
+}
+
+.typing-effect:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-effect:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.typing-effect:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.typing-effect:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.typing-effect:nth-child(5) {
+  animation-delay: 2s;
+}
+
+@keyframes typing {
+  0% {
+      opacity: 0;
+  }
+  25%{
+    opacity: 0.25;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+.container{
+
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.video-container{
+  width: 700px;
+}

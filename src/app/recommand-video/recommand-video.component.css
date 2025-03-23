@@ -1,0 +1,15 @@
+.content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+ul li{
+  display: inline;
+}
+li{
+  padding: .5rem;
+  background-color: bisque;
+  border-radius: 50px;
+  padding: 10px;
+}

@@ -1,0 +1,40 @@
+<!-- <p>player works!</p> -->
+
+
+
+<!-- <div class="video-container" (click)="handleClick($event, videoPlayer)">
+  <video #videoPlayer width="900px" height="400px" controls>
+    <source src="/assets/2022-08-13T17-40-41.356Z-production ID_5057337.mp4" controls>
+  </video>
+  <div class="left-click-area"></div>
+  <div class="right-click-area"></div>
+</div>
+
+
+<hr>
+<hr> -->
+
+<!-- Text Style format-001 -->
+
+<!-- <div class="typing-container">
+  <span class="typing-effect">H</span>
+  <span class="typing-effect">e</span>
+  <span class="typing-effect">l</span>
+  <span class="typing-effect">l</span>
+  <span class="typing-effect">o</span>
+</div>
+ -->
+
+<div class="container">
+<div class="video-player-container" (click)="handleClick($event, videoPlayer)" *ngIf="video">
+  <video #videoPlayer controls [src]="video.url" class="video-container" ></video>
+  <br>
+  <h3>{{ video.title }}</h3>
+  <br>
+  <p>{{ video.description }}</p>
+
+  <div class="left-click-area"></div>
+  <div class="right-click-area"></div>
+</div>
+</div>
+

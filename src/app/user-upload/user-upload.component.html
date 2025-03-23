@@ -1,0 +1,19 @@
+<p>user-upload works!</p>
+<div class="upload-container">
+  <h2>Upload a Video</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="videoTitle">Title</label>
+      <input type="text" id="videoTitle" [(ngModel)]="videoTitle" name="videoTitle" required />
+    </div>
+
+    <div>
+      <label for="videoFile">Choose Video</label>
+      <input type="file" id="videoFile" (change)="onFileSelect($event)" required />
+    </div>
+
+    <button type="submit">Upload Video</button>
+  </form>
+
+  <p *ngIf="uploadMessage">{{uploadMessage}}</p>
+</div>

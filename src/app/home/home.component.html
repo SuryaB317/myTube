@@ -1,0 +1,9 @@
+<div class="video-container">
+  <div *ngFor="let video of videos" class="video-item" (click)="onVideoSelect(video.id)" >
+    <img [src]="video.thumbnail" alt="Video Thumbnail"  class="thumgClass"/>
+    <p>{{ video.title |  uppercase }}</p>
+   <p><strong>{{video.channelName}}</strong>. <em>{{video.view}}</em>.  {{video.time}}</p>
+
+  </div>
+</div>
+
